@@ -11,7 +11,7 @@
         background-color: rgb(0,0,0);
     }
 
-    MyThing 
+    darkBlueBox 
     {
         display: block;
         width: 100%;
@@ -19,12 +19,50 @@
         background: rgb(22, 11, 88);
     }
 
-    myText
+    nameTextBox
     {
-        display:block;
+        display:flex;
         width: 200px;
         height: 100%;
-        background: rgb(99, 78, 215);        
+        background: rgb(99, 78, 215);  
+        color: rgb(255, 255, 255); 
+        font-family: monospace; 
+        font-size: 40px;
+        top: 50px; 
+        justify-content: center;
+        align-items: center;
+    }
+
+    coolLine
+    {
+        display: block;
+        width: 100%;
+        height: 5px;
+        top: 100px;
+        background: rgb(255, 255, 255);
+    }
+
+    .throughLine
+    {
+        display:block;
+        position: absolute;
+        width: 3px;
+        height: 1000px;
+        background:rgb(255, 255, 255);
+        z-index: 0;
+    }
+
+    .optionBox
+    {
+        display: flex;
+        width: 200px;
+        height: 100%;
+        background: rgb(99, 78, 215);  
+        color: rgb(255,255,255);
+        font-family: monospace;
+        font-size: 15px;
+        justify-content: center;
+        align-items: center;
     }
 
 
@@ -33,20 +71,47 @@
 </head>
 
 <body>
-    <MyThing>
-        <myText>
-            <div 
-            style="color: rgb(255, 255, 255); 
-            font-family: sans-serif; 
-            text-align: center;
-            position: relative;
-            top: 50px;
-            ">
-                <b>MobBox</b>
-            </div>
-        </myText>
-    </MyThing>
+    <darkBlueBox>
 
-    <img src="Images/Ferret.png" style="border-radius: 50%; height: 200px; width: 200px; margin-top: 10px; margin-left: 10px; border-color: rgb(123, 177, 223); border-width: 5px; border-style: solid;">
+        <nameTextBox>
+            <b>MobBox</b>
+        </nameTextBox>
+
+        <a href="conceal.html">
+            <div class="optionBox" style="margin-left: 200px; margin-top: -120px; background: rgb(94, 49, 136);">
+                <b>The Concealing Light</b>
+            </div>
+        </a>
+
+    </darkBlueBox>
+
+    <img src="Images/Ferret.png" 
+        style="border-radius: 50%;
+        height: 200px;
+        width: 200px;
+        margin-top: 10px;
+        margin-left: 10px;
+        border-color: rgb(255, 255, 255);
+        border-width: 5px;
+        border-style: solid;
+        position: relative;
+        z-index: 10;">
+    </img>
+
+
+    <coolLine>
+        <div style="margin-top: -225px;"></div>
+    </coolLine>
+
+
+    <div class="throughLine" style="margin-left: 110px;"></div>
+    <div class="throughLine" style="margin-left: 100px;"></div>
+    <div class="throughLine" style="margin-left: 120px;"></div>
+    <div class="throughLine" style="margin-left: 150px;"></div>
+    <div class="throughLine" style="margin-left: 70px;"></div>
+
+
+
 </body>
+
 </html>
