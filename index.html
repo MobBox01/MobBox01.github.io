@@ -14,57 +14,78 @@
     darkBlueBox 
     {
         display: block;
+        position: relative;
         width: 100%;
         height: 120px;
         background: rgb(22, 11, 88);
+        z-index: 0;
     }
 
     nameTextBox
     {
         display:flex;
+        position: relative;
         width: 200px;
         height: 100%;
         background: rgb(99, 78, 215);  
         color: rgb(255, 255, 255); 
         font-family: monospace; 
         font-size: 40px;
-        top: 50px; 
         justify-content: center;
         align-items: center;
+        z-index: 2;
     }
 
     coolLine
     {
-        display: block;
+        display: flex;
+        position: absolute;
         width: 100%;
         height: 5px;
-        top: 100px;
+        top: 120px;
+        left: 0;
         background: rgb(255, 255, 255);
+        z-index: 1;
     }
 
     .throughLine
     {
-        display:block;
-        position: absolute;
-        width: 3px;
-        height: 1000px;
+        display:flex;
+        position:absolute;
+        width: 5px;
+        height: 500px;
         background:rgb(255, 255, 255);
-        z-index: 0;
+        z-index: 1;
+        top: 120px;
+    }
+    
+    .bottomLine
+    {
+        display:flex;
+        position: unset;
+        background: rgb(255,255,255);
+        bottom: 10px;
+        width: 100%;
+        height: 5px;
+        z-index: 3;
     }
 
     .optionBox
     {
         display: flex;
+        position: absolute;
+        top: 0;
+        left: 200px;
         width: 200px;
-        height: 100%;
+        height: 120px;
         background: rgb(99, 78, 215);  
         color: rgb(255,255,255);
         font-family: monospace;
         font-size: 15px;
         justify-content: center;
         align-items: center;
+        z-index: 1;
     }
-
 
     </style>
 
@@ -78,8 +99,26 @@
         </nameTextBox>
 
         <a href="conceal.html">
-            <div class="optionBox" style="margin-left: 200px; margin-top: -120px; background: rgb(94, 49, 136);">
+            <div class="optionBox" style="background: rgb(94, 49, 136);">
                 <b>The Concealing Light</b>
+            </div>
+        </a>
+
+        <a href="conceal.html">
+            <div class="optionBox" style="background: rgb(82, 35, 126); left: 400px;">
+                <b>TBD</b>
+            </div>
+        </a>
+
+        <a href="conceal.html">
+            <div class="optionBox" style="background: rgb(79, 30, 125); left: 600px;">
+                <b>TBD</b>
+            </div>
+        </a>
+
+        <a href="conceal.html">
+            <div class="optionBox" style="background: rgb(69, 20, 115); left: 800px;">
+                <b>TBD</b>
             </div>
         </a>
 
@@ -96,22 +135,44 @@
         border-style: solid;
         position: relative;
         z-index: 10;">
-    </img>
 
+    <coolLine></coolLine>
 
-    <coolLine>
-        <div style="margin-top: -225px;"></div>
-    </coolLine>
+    <div style="color: aliceblue;
+        font-family: monospace;
+        position: absolute;
+        font-size: 50px;
+        margin-left: 250px;
+        margin-top: -220px;">
+            <b>About me</b>
+    </div>
 
+    <div style="color: aliceblue;
+        font-family: monospace;
+        position: absolute;
+        font-size: 20px;
+        margin-left: 250px;
+        margin-top: -160px;">
+            <b>I like to code and make 3D-Models</b><br>
+            <b>I like ferrets.</b>
+    </div>
 
     <div class="throughLine" style="margin-left: 110px;"></div>
     <div class="throughLine" style="margin-left: 100px;"></div>
     <div class="throughLine" style="margin-left: 120px;"></div>
     <div class="throughLine" style="margin-left: 150px;"></div>
     <div class="throughLine" style="margin-left: 70px;"></div>
+    <div class="throughLine" style="margin-left: 230px;"></div>
+    <div class="throughLine" style="margin-left: 1000px; z-index: 10; top: 0px; height: 620px;"></div>
+    <div class="throughLine" style="margin-left: 800px; z-index: 10; top: 0px; height: 120px;"></div>
+    <div class="throughLine" style="margin-left: 600px; z-index: 10; top: 0px; height: 120px;"></div>
+    <div class="throughLine" style="margin-left: 400px; z-index: 10; top: 0px; height: 120px;"></div>
+    <div class="throughLine" style="margin-left: 200px; z-index: 10; top: 0px; height: 120px;"></div>
 
 
 
+
+    <div class="bottomLine" style="margin-top: 200px;"></div>
 </body>
 
 </html>
