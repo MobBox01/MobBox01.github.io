@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    body
+    {
+        margin:0;
+        background-color: rgb(0,0,0);
+    }
+
+    darkBlueBox 
+    {
+        display: block;
+        position: relative;
+        width: 100%;
+        height: 120px;
+        background: rgb(22, 11, 88);
+        z-index: 0;
+    }
+
+    coolLine
+    {
+        display: flex;
+        position: absolute;
+        width: 100%;
+        height: 5px;
+        top: 120px;
+        left: 0;
+        background: rgb(255, 255, 255);
+        z-index: 1;
+    }
+
+    .throughLine
+    {
+        display:flex;
+        position:absolute;
+        width: 5px;
+        height: 500px;
+        background:rgb(255, 255, 255);
+        z-index: 1;
+        top: 120px;
+    }
+    
+    .bottomLine
+    {
+        display:flex;
+        position: unset;
+        background: rgb(255,255,255);
+        bottom: 10px;
+        width: 100%;
+        height: 5px;
+        z-index: 3;
+    }
+
+    .optionBox
+    {
+        display: flex;
+        position: absolute;
+        top: 0;
+        left: 200px;
+        width: 200px;
+        height: 120px;
+        background: rgb(99, 78, 215);  
+        color: rgb(255,255,255);
+        font-family: monospace;
+        font-size: 15px;
+        justify-content: center;
+        align-items: center;
+        z-index: 1;
+    }
+
+    </style>
+
+</head>
+
+<body>
+    <darkBlueBox>
+        <a href="index.html">
+            <div class="optionBox" style="background: #4A148C; left: 0px; font-size: 50px;">
+                <b>MobBox</b>
+            </div>
+        </a>
+
+        <a href="conceal.html">
+            <div class="optionBox" style="background: #6A1B99;">
+                <b>The Concealing Light<br>(Game)</b>
+            </div>
+        </a>
+
+        <a href="Education.html">
+            <div class="optionBox" style="background: #D81B60; left: 400px;">
+                <b>Education</b>
+            </div>
+        </a>
+
+        <a href="tbd.html">
+            <div class="optionBox" style="background: #BA68C8; left: 600px;">
+                <b>TBD</b>
+            </div>
+        </a>
+
+        <a href="tbd.html">
+            <div class="optionBox" style="background: #E1BEE7; left: 800px;">
+                <b>TBD</b>
+            </div>
+        </a>
+
+    </darkBlueBox>
+
+    <img src="Images/Integration.png" 
+        style="border-radius: 50%;
+        height: 200px;
+        width: 200px;
+        margin-top: 10px;
+        margin-left: 10px;
+        border-color: rgb(255, 255, 255);
+        border-width: 5px;
+        border-style: solid;
+        position: relative;
+        z-index: 10;"></img>
+
+    <coolLine></coolLine>
+
+    <div style="color: aliceblue;
+        font-family: monospace;
+        position: absolute;
+        font-size: 50px;
+        margin-left: 250px;
+        margin-top: -220px;">
+            <b>Education</b>
+    </div>
+
+    <div style="color: aliceblue;
+        font-family: monospace;
+        position: absolute;
+        font-size: 19px;
+        margin-left: 250px;
+        margin-top: -160px;">
+        <b>Enrolling into MCC for Computer Science<br>Planning to take Cyber Security CS AAS<br><br>
+            High School Experience:<br>
+            ~ Pre-Calculus at MCC and tutoring peers<br>
+            ~ Taken Calculus AB <br>
+            ~ Taken Computer Science <br>
+            ~ Was on robotics team for 2 years<br>
+            ~ Made computer science game project using java swing enriching<br>
+            my knowledge of OOP<br>
+            </b>
+
+    </div>
+
+    <div class="throughLine" style="margin-left: 110px;"></div>
+    <div class="throughLine" style="margin-left: 100px;"></div>
+    <div class="throughLine" style="margin-left: 120px;"></div>
+    <div class="throughLine" style="margin-left: 230px;"></div>
+
+    <div class="throughLine" style="margin-left: 1000px; z-index: 10; top: 0px; height: 620px;"></div>
+    <div class="throughLine" style="margin-left: 800px; z-index: 10; top: 0px; height: 120px;"></div>
+    <div class="throughLine" style="margin-left: 600px; z-index: 10; top: 0px; height: 120px;"></div>
+    <div class="throughLine" style="margin-left: 400px; z-index: 10; top: 0px; height: 120px;"></div>
+    <div class="throughLine" style="margin-left: 200px; z-index: 10; top: 0px; height: 120px;"></div>
+
+    <div class="bottomLine" style="margin-top: 200px;"></div>
+    <div class="bottomLine" style="margin-top: 10px;"></div>
+
+
+</body>
+
+</html>
