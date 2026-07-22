@@ -1,7 +1,7 @@
-MobBox: #4A148C
-The Concealing Light: #6A1B99
-TBD: #8E24AA
-TBD: #BA68C8
-TBD: #E1BEE7
+Zay Kase: #4A148C
+Experience: #6A1B99
+: #8E24AA
+: #BA68C8
+: #E1BEE7
 
 Selected: #D81B60
